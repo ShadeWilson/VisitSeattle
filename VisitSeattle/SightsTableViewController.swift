@@ -8,10 +8,14 @@
 
 import UIKit
 
-class SightsTableViewController: UITableViewController {
+protocol VisitedDelegate: class {
+    func visitedSightNumber(_ index: Int, hasVisited: Bool)
+}
+
+class SightsTableViewController: UITableViewController, VisitedDelegate {
     
     var sights = SightsSource.sights
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,7 +58,14 @@ class SightsTableViewController: UITableViewController {
     }
     
 
-    
+    // MARK: - Determining is a sight has been visited or not
+    func visitedSightNumber(_ index: Int, hasVisited: Bool) {
+        if hasVisited {
+            sights[index].hasVisited = true
+        } else {
+            sights[index].hasVisited = false
+        }
+    }
 
     
 
@@ -82,7 +93,11 @@ class SightsTableViewController: UITableViewController {
                 
                 guard let navigationController = segue.destination as? UINavigationController, let sightsDetailController = navigationController.topViewController as? SightsDetailController else { return }
                 
+                
                 sightsDetailController.sight = sight
+                sightsDetailController.sightIndex = indexPath.row
+                sightsDetailController.delegate = self
+                
             }
         }
     }
