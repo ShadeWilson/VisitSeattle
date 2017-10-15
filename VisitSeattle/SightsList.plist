@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Space Needle</string>
+		<key>neighborhood</key>
+		<string>Seattle Center</string>
+		<key>address</key>
+		<string>400 Broad St</string>
+		<key>category</key>
+		<string>Famous Sites</string>
+		<key>description</key>
+		<string>Head up and see what all the oohhhs and ahhhhhs are about: unparalleled views of Mt. Rainer to the south, the Cascade range to the East, and the majestic Olympics to the West. May not be the best views when raining. Also may be partially under contruction.
+</string>
+		<key>isIncludedCityPass</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>INCLUDED</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Columbia Tower Sky View Observatory</string>
+		<key>neighborhood</key>
+		<string>Belltown</string>
+		<key>address</key>
+		<string>701 5th Ave Floor 73</string>
+		<key>category</key>
+		<string>Famous Sites</string>
+		<key>description</key>
+		<string>The Sky View Observatory is located on the 73rd floor of Columbia Center. At nearly 1,000 feet it offers the tallest public viewing area in the Pacific Northwest. The 360 degree panoramic view includes Mt. Rainier, Bellevue, the Cascade Mountains, Mt. Baker, Elliott Bay, the Olympic Mountains, the Space Needle and the city of Seattle.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>$15</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Chihuly Garden and Glass</string>
+		<key>neighborhood</key>
+		<string>Seattle Center</string>
+		<key>address</key>
+		<string>305 Harrison St
+305 Harrison St
+</string>
+		<key>category</key>
+		<string>Museum </string>
+		<key>description</key>
+		<string>Chihuly Garden and Glass is an exhibit in the Seattle Center showcasing the studio glass of Dale Chihuly. The project includes three primary components: the Garden, the Glasshouse, and the Interior Exhibits, with significant secondary spaces</string>
+		<key>isIncludedCityPass</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>INCLUDED</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Seattle Underground Tour</string>
+		<key>neighborhood</key>
+		<string>Pioneer Square</string>
+		<key>address</key>
+		<string>614 1st Avenue</string>
+		<key>category</key>
+		<string>History?</string>
+		<key>description</key>
+		<string>One of Seattle’s most unusual attractions, a humorous stroll through intriguing subterranean storefronts and sidewalks entombed when the city rebuilt on top of itself after the Great Fire of 1889.
+The 75-minute guided walking tour begins beneath Doc Maynard’s Public House, then spills into historic Pioneer Square, Seattle’s birthplace, before plunging underground for an exclusive, time-capsule view of the buried city.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>$22</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bainbridge Island Ferry</string>
+		<key>neighborhood</key>
+		<string>Bainbridge Island</string>
+		<key>address</key>
+		<string>Seattle Ferry Terminal</string>
+		<key>category</key>
+		<string>Boat Ride</string>
+		<key>description</key>
+		<string>If there is one required activity of Seattle tourists, it is a trip across the open waters of Puget Sound. The memories of a Bainbridge Island ferry ride in the Pacific Northwest last a lifetime, which is why the Washington State Ferries are the most popular tourist attraction in the state. The trip from Seattle to Bainbridge Island via ferry boat (locals refer to it merely as “the boat”) is 35 minutes.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>$8.75</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Gas Works Park</string>
+		<key>neighborhood</key>
+		<string>Fremont</string>
+		<key>address</key>
+		<string>2101 N Northlake Way</string>
+		<key>category</key>
+		<string>Park</string>
+		<key>description</key>
+		<string>Gas Works Park in Seattle, Washington, is a 19.1-acre public park on the site of the former Seattle Gas Light Company gasification plant with beautiful views of Lake Union and downtown Seattle. The perfect place for a picnic!</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>SW Queen Anne Greenbelt</string>
+		<key>neighborhood</key>
+		<string>Queen Anne</string>
+		<key>address</key>
+		<string>12th Ave W W Howe St</string>
+		<key>category</key>
+		<string>Park</string>
+		<key>description</key>
+		<string>Urban park with woods, hiking trails, and a great view of the sound.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kerry Park</string>
+		<key>neighborhood</key>
+		<string>Queen Anne</string>
+		<key>address</key>
+		<string>211 W Highland Dr</string>
+		<key>category</key>
+		<string>Park</string>
+		<key>description</key>
+		<string>A small park with breath-taking views of downtown Seattle, Elliott Bay, the West Seattle peninsula, Bainbridge Island, and Mount Rainier.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Center for Wooden Boats</string>
+		<key>neighborhood</key>
+		<string>South Lake Union</string>
+		<key>address</key>
+		<string>1010 Valley St</string>
+		<key>category</key>
+		<string>Boat Ride</string>
+		<key>description</key>
+		<string>The Center for Wooden Boats at South Lake Union is a hub of hands-on learning year-round. Boat rentals, classes and workshops, field trips, lectures, and opportunities for direct experience on the water and at the docks are just a few of the things you’ll find when you visit. Free boat rides on Sundays. </string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rachel&apos;s Ginger Beer</string>
+		<key>neighborhood</key>
+		<string>Capitol Hill</string>
+		<key>address</key>
+		<string>1610 12th Ave</string>
+		<key>category</key>
+		<string>Food and Drink</string>
+		<key>description</key>
+		<string>simple ingredients are key. fresh lemons, strong roots, organic cane sugar and good water made intimate with one another and brewed to taste here in seattle. Some of Seattle&apos;s best ginger beer, moscow mules, and delicious fries.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>~$10 for drink and fries</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Molly Moon&apos;s Homemade Icecream</string>
+		<key>neighborhood</key>
+		<string>Capitol Hill</string>
+		<key>address</key>
+		<string>917 E Pine St</string>
+		<key>category</key>
+		<string>Food and Drink</string>
+		<key>description</key>
+		<string>Known for their unique flavors, Molly Moon&apos;s is often touted as Seattle&apos;s best icecream. From kitchen to cone, every scoop is the result of hard working, happy staff, strong local partnerships, sustainable practices, and of course, the finest ingredients we can source.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>$6</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Institute for Health Metrics and Evaluation</string>
+		<key>neighborhood</key>
+		<string>Belltown</string>
+		<key>address</key>
+		<string>2301 5th Ave</string>
+		<key>category</key>
+		<string>Work</string>
+		<key>description</key>
+		<string>The Institute for Health Metrics and Evaluation (IHME) is an independent population health research center at UW Medicine, part of the University of Washington. IHME is famous for their work on disease burden estimates and the free coffee in the break room.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Go on a Hike</string>
+		<key>neighborhood</key>
+		<string>kjh</string>
+		<key>address</key>
+		<string>lkj</string>
+		<key>category</key>
+		<string>Outdoors</string>
+		<key>description</key>
+		<string>Could go anywhere! There&apos;s lots of great hike just outside of Seattle, but you&apos;ll need someone to drive you there.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Woodland Park Zoo</string>
+		<key>neighborhood</key>
+		<string>Greenlake</string>
+		<key>address</key>
+		<string>5500 Phinney Ave N</string>
+		<key>category</key>
+		<string>Museum</string>
+		<key>description</key>
+		<string>Woodland Park Zoo saves animals and their habitats through conservation leadership and engaging experiences, inspiring people to learn, care and act.</string>
+		<key>isIncludedCityPass</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>INCLUDED</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>University of Washington</string>
+		<key>neighborhood</key>
+		<string>University District</string>
+		<key>address</key>
+		<string>University of Washington</string>
+		<key>category</key>
+		<string>Famous Sites</string>
+		<key>description</key>
+		<string>Established in 1861, the University of Washington is one of the oldest universities on the West Coast. Overall, Washington encompasses 500 buildings and over 20 million gross square footage of space, including over 26 university libraries.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Downtown Queen Anne</string>
+		<key>neighborhood</key>
+		<string>Queen Anne</string>
+		<key>address</key>
+		<string>Queen Anne Ave N</string>
+		<key>category</key>
+		<string>Food and Drink</string>
+		<key>description</key>
+		<string>Perched at the top of a massive hill, downtown Queen Anne is slightly less residentail than the surrouding area. Home to a number of fantastic Seattle eateries like How to Cook a Wolf, Eden Hill, Five Hooks Fish Grill, and Safeway. </string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Pike Place</string>
+		<key>neighborhood</key>
+		<string>Belltown</string>
+		<key>address</key>
+		<string>1501 1st Ave</string>
+		<key>category</key>
+		<string>Famous Sites</string>
+		<key>description</key>
+		<string>Opened in 1907, Pike Place is one of the oldest continuously operated public farmers&apos; markets in the United States. The market features a large variety of vendors selling fish, fresh produce, flowers, crafts, and more. Home of the original Starbucks.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Starbucks Reserve Roastery</string>
+		<key>neighborhood</key>
+		<string>Capitol Hill</string>
+		<key>address</key>
+		<string>1124 Pike St</string>
+		<key>category</key>
+		<string>Food and Drink</string>
+		<key>description</key>
+		<string>What if Willy Wonka had built the ultimate coffee shop instead of a chocolate factory? Had the story gone that way, the result may have looked a lot like the 15,000-square-foot Starbucks Reserve® Roastery and Tasting Room. Opened on December 5, 2014, the Roastery is a warm, inviting space just nine blocks away from the original 1912 Pike Store in Seattle</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Golden Gardens</string>
+		<key>neighborhood</key>
+		<string>Ballard</string>
+		<key>address</key>
+		<string>8498 Seaview Pl NW</string>
+		<key>category</key>
+		<string>Park</string>
+		<key>description</key>
+		<string>Located in Ballard on Puget Sound, this popular park offers extraordinary views of Puget Sound and the Olympic Mountains. This park features two wetlands, a short loop trail, and restored the northern beach. </string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dick&apos;s Drive-In</string>
+		<key>neighborhood</key>
+		<string>klj</string>
+		<key>address</key>
+		<string>lkj</string>
+		<key>category</key>
+		<string>Food and Drink</string>
+		<key>description</key>
+		<string>Family-owned and opened in 1954 in Wallingford and now with six other locations around Seattle, Dick&apos;s is a local favorite for cheap burgers and milkshakes. Their prices haven&apos;t changed in years.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>$2 burgers, $3 shakes</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fremont Troll</string>
+		<key>neighborhood</key>
+		<string>Fremont</string>
+		<key>address</key>
+		<string>Troll Ave N</string>
+		<key>category</key>
+		<string>Famous Sites</string>
+		<key>description</key>
+		<string>Ever since the Aurora Bridge was erected in 1932 there have been reports of troll sightings underneath. Now we can say for sure that a troll has taken up residence on the north end of the Aurora Bridge.
+
+Fremont’s neighborhood trolls have come a long way from the terrifying Trolls of legend. They have, in fact, become quite civilized, fun loving local celebrities.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ballard Farmers Market</string>
+		<key>neighborhood</key>
+		<string>Ballard</string>
+		<key>address</key>
+		<string>5300 Ballard Ave NW</string>
+		<key>category</key>
+		<string>Food and Drink</string>
+		<key>description</key>
+		<string>Open since 2000, Ballard Farmers Market is Seattle&apos;s first year-round neighborhood farmers market selling produce exclusively from Washington state farmers. Open Sunday 10 a.m. to 3 p.m., year round.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Seattle Aquarium</string>
+		<key>neighborhood</key>
+		<string>Belltown</string>
+		<key>address</key>
+		<string>1483 Alaskan Way</string>
+		<key>category</key>
+		<string>Museum</string>
+		<key>description</key>
+		<string>Discover playful sea otters, graceful octopuses, luminous moon jellies and more. Be amazed by Window on Washington Waters, a 120,000-gallon exhibit with daily dive shows. Touch live sea creatures in our tiide pools.</string>
+		<key>isIncludedCityPass</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>INCLUDED</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Argosy  Cruises Harbor Tour</string>
+		<key>neighborhood</key>
+		<string>Ballard</string>
+		<key>address</key>
+		<string>5300 Ballard Ave NW</string>
+		<key>category</key>
+		<string>Food and Drink</string>
+		<key>description</key>
+		<string>Learn about Seattle on this entertaining one-hour, live-narrated cruise of Elliott Bay and the Seattle Harbor while taking in views of the city skyline. View the spectacular panoramic background of the majestic Cascade and Olympic mountain ranges. See the city’s historic waterfront, busy shipyards and breathtaking natural beauty.</string>
+		<key>isIncludedCityPass</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>INCLUDED</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Museum of Pop Culture</string>
+		<key>neighborhood</key>
+		<string>Seattle Center</string>
+		<key>address</key>
+		<string>325 5th Ave N</string>
+		<key>category</key>
+		<string>Museum</string>
+		<key>description</key>
+		<string>Experience the power of pop culture in MoPOP&apos;s colorful Frank Gehry-designed building! Explore some of the most significant moments in rock music, science fiction, and popular culture with hands-on experiences, iconic artifacts, and award-winning exhibitions featuring luminaries in the fields of music, literature, television, video games.
+</string>
+		<key>isIncludedCityPass</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>INCLUDED</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Pacific Science Center</string>
+		<key>neighborhood</key>
+		<string>Seattle Center</string>
+		<key>address</key>
+		<string>200 2nd Ave N</string>
+		<key>category</key>
+		<string>Museum</string>
+		<key>description</key>
+		<string>Discover hands-on science fun and watch exciting live demonstrations. Wander among fluttering tropical butterflies. Touch live marine animals, explore distant galaxies, and then immerse yourself in a giant-screen IMAX® movie.</string>
+		<key>isIncludedCityPass</key>
+		<string>1</string>
+		<key>cost</key>
+		<string>INCLUDED</string>
+	</dict>
+</array>
+</plist>
