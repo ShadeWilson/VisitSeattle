@@ -22,6 +22,7 @@ class SightsDetailController: UITableViewController {
     @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var sightImageView: UIImageView!
     
+    @IBOutlet weak var visitedButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,10 +67,6 @@ class SightsDetailController: UITableViewController {
     func configureView() {
         guard let sight = sight else { return }
         
-        
-        descriptionLabel.text = sight.description
-        
-        
         nameLabel.text = sight.name
         descriptionLabel.text = sight.description
         neighborhoodLabel.text = sight.neighborhood
@@ -85,7 +82,23 @@ class SightsDetailController: UITableViewController {
         costLabel.text = sight.cost
         sightImageView.image = sight.image
         
+        
     }
+    
+    // an addmittedly bad name
+    @IBAction func haveVisited() {
+        
+        if sight?.hasVisited == true {
+            sight?.hasVisited = false
+            visitedButton.setTitle("To Do", for: .normal)
+            visitedButton.backgroundColor = UIColor(displayP3Red: 0.0, green: 122/255.0, blue: 255/255.0, alpha: 1.0)
+        } else {
+            sight?.hasVisited = true
+            visitedButton.setTitle("Visited!", for: .normal)
+            visitedButton.backgroundColor = UIColor(displayP3Red: 0.0, green: 128/255.0, blue: 64/255.0, alpha: 1.0)
+        }
+    }
+    
 
     
 }

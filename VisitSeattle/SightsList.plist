@@ -314,9 +314,9 @@ The 75-minute guided walking tour begins beneath Doc Maynard’s Public House, t
 		<key>name</key>
 		<string>Dick&apos;s Drive-In</string>
 		<key>neighborhood</key>
-		<string>klj</string>
+		<string>Queen Anne</string>
 		<key>address</key>
-		<string>lkj</string>
+		<string>500 Queen Anne Ave N</string>
 		<key>category</key>
 		<string>Food and Drink</string>
 		<key>description</key>
@@ -378,7 +378,7 @@ Fremont’s neighborhood trolls have come a long way from the terrifying Trolls 
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Argosy  Cruises Harbor Tour</string>
+		<string>Argosy Cruises Harbor Tour</string>
 		<key>neighborhood</key>
 		<string>Ballard</string>
 		<key>address</key>

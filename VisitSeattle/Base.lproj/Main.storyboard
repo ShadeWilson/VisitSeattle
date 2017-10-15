@@ -77,7 +77,7 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Sights" id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" title="Visit Seattle!" id="Zdf-7t-Un8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,6 +107,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bt2-g0-RSn">
+                            <rect key="frame" x="0.0" y="505" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <state key="normal" title="To Do">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="haveVisited" destination="sWH-5s-grH" eventType="touchUpInside" id="4M5-we-XEW"/>
+                            </connections>
+                        </button>
                         <sections>
                             <tableViewSection id="e79-LB-HHf">
                                 <cells>
@@ -311,6 +324,7 @@
                         <outlet property="nameLabel" destination="9Yu-D0-2m9" id="ucc-73-TK1"/>
                         <outlet property="neighborhoodLabel" destination="S2X-5V-IDS" id="Uui-mG-pc3"/>
                         <outlet property="sightImageView" destination="fFU-bg-vRi" id="LT8-yj-G07"/>
+                        <outlet property="visitedButton" destination="Bt2-g0-RSn" id="zCy-Br-ZBj"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldi-8k-AsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

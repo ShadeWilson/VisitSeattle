@@ -18,7 +18,7 @@ struct Sight {
     let isIncludedCityPass: Bool
     let cost: String
     let image: UIImage?
-    let hasVisited: Bool
+    var hasVisited: Bool
     
     // these properties are static so that they are type  properties
     // in other words, we do not need to make an instance of SightKey to use them
