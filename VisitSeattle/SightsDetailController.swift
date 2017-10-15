@@ -12,18 +12,23 @@ class SightsDetailController: UITableViewController {
 
     var sight: Sight?
     
+    
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    
-    
+    @IBOutlet weak var neighborhoodLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var isIncludedCityPassLabel: UILabel!
+    @IBOutlet weak var costLabel: UILabel!
+    @IBOutlet weak var sightImageView: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
         configureView()
         
-        
-
         
     }
 
@@ -46,9 +51,12 @@ class SightsDetailController: UITableViewController {
         
         if indexPath.section == 0 && indexPath.row == 2 {
             rowHeight = UITableViewAutomaticDimension
+        } else if indexPath.section == 0 && indexPath.row == 0 {
+            rowHeight = 200
         } else {
             rowHeight = 44
         }
+
         
         return rowHeight
     }
@@ -58,13 +66,14 @@ class SightsDetailController: UITableViewController {
     func configureView() {
         guard let sight = sight else { return }
         
-        descriptionLabel.text = "Hello"
         
-        /*
-        sightNameLabel.text = sight.name
         descriptionLabel.text = sight.description
-        sightNeighborhoodLabel.text = sight.neighborhood
-        sightAddressLabel.text = sight.address
+        
+        
+        nameLabel.text = sight.name
+        descriptionLabel.text = sight.description
+        neighborhoodLabel.text = sight.neighborhood
+        addressLabel.text = sight.address
         categoryLabel.text = sight.category
         
         if sight.isIncludedCityPass {
@@ -74,8 +83,8 @@ class SightsDetailController: UITableViewController {
         }
         
         costLabel.text = sight.cost
-        //sightImageView.image = sight.image
-        */
+        sightImageView.image = sight.image
+        
     }
 
     

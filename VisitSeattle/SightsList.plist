@@ -104,15 +104,15 @@ The 75-minute guided walking tour begins beneath Doc Maynard’s Public House, t
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>SW Queen Anne Greenbelt</string>
+		<string>Centennial Park</string>
 		<key>neighborhood</key>
 		<string>Queen Anne</string>
 		<key>address</key>
-		<string>12th Ave W W Howe St</string>
+		<string>2711 Alaskan Way</string>
 		<key>category</key>
 		<string>Park</string>
 		<key>description</key>
-		<string>Urban park with woods, hiking trails, and a great view of the sound.</string>
+		<string>Urban park with woods, hiking trails, and a great view of Eliot Bay.</string>
 		<key>isIncludedCityPass</key>
 		<string>0</string>
 		<key>cost</key>
@@ -168,7 +168,7 @@ The 75-minute guided walking tour begins beneath Doc Maynard’s Public House, t
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Molly Moon&apos;s Homemade Icecream</string>
+		<string>Molly Moon&apos;s Homemade Ice Cream</string>
 		<key>neighborhood</key>
 		<string>Capitol Hill</string>
 		<key>address</key>
@@ -202,9 +202,9 @@ The 75-minute guided walking tour begins beneath Doc Maynard’s Public House, t
 		<key>name</key>
 		<string>Go on a Hike</string>
 		<key>neighborhood</key>
-		<string>kjh</string>
+		<string>Anywhere</string>
 		<key>address</key>
-		<string>lkj</string>
+		<string> </string>
 		<key>category</key>
 		<string>Outdoors</string>
 		<key>description</key>
