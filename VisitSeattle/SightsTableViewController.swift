@@ -28,7 +28,6 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
     }
     
     func loadList(){
-        //load data here
         self.tableView.reloadData()
     }
 
@@ -76,6 +75,7 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
     
 
     // MARK: - Determining is a sight has been visited or not
+    // function required by our delegate protocol
     func visitedSightNumber(_ index: Int, hasVisited: Bool) {
         if hasVisited {
             sights[index].hasVisited = true

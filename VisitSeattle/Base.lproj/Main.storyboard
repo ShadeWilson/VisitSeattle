@@ -64,14 +64,14 @@
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check Mark" translatesAutoresizingMaskIntoConstraints="NO" id="zY5-V6-coa">
-                                            <rect key="frame" x="298.5" y="203.5" width="36.5" height="36.5"/>
+                                            <rect key="frame" x="318.5" y="203.5" width="36.5" height="36.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="zY5-V6-coa" secondAttribute="height" multiplier="1:1" id="Atc-cK-orx"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sight to Visit!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8k-bX-o7G">
-                                            <rect key="frame" x="16" y="203.5" width="107.5" height="28.5"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <rect key="frame" x="16" y="203.5" width="96.5" height="28.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -84,7 +84,7 @@
                                         <constraint firstAttribute="bottom" secondItem="zY5-V6-coa" secondAttribute="bottom" constant="3.5" id="YCs-ss-PWP"/>
                                         <constraint firstItem="5kK-LY-hsM" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" id="YRQ-40-5rw"/>
                                         <constraint firstAttribute="trailing" secondItem="5kK-LY-hsM" secondAttribute="trailing" id="gjV-Hb-NcD"/>
-                                        <constraint firstAttribute="trailing" secondItem="zY5-V6-coa" secondAttribute="trailing" constant="40" id="jZG-YL-h3h"/>
+                                        <constraint firstAttribute="trailing" secondItem="zY5-V6-coa" secondAttribute="trailing" constant="20" id="jZG-YL-h3h"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="N8k-bX-o7G" secondAttribute="bottom" constant="3.5" id="poL-bj-got"/>
                                     </constraints>
                                 </tableViewCellContentView>

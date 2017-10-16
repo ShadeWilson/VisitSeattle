@@ -425,5 +425,53 @@ Fremont’s neighborhood trolls have come a long way from the terrifying Trolls 
 		<key>cost</key>
 		<string>INCLUDED</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>Alki Beach</string>
+		<key>neighborhood</key>
+		<string>Alki</string>
+		<key>address</key>
+		<string>1702 Alki Ave SW</string>
+		<key>category</key>
+		<string>Park</string>
+		<key>description</key>
+		<string>Alki Beach is the site of the landing of the first white settlers in Seattle on a cold, stormy day in November of 1851. a great spot for a 2.5 mile walk any time of year, and in the summer draws joggers, rollerbladers, volleyball players, beachcombers, sunbathers, bicyclists and strollers out to enjoy the sun.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>FREE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>See a Movie</string>
+		<key>neighborhood</key>
+		<string>Belltown</string>
+		<key>address</key>
+		<string>1501 7th Ave</string>
+		<key>category</key>
+		<string>Museum</string>
+		<key>description</key>
+		<string>Leave the troubles of you real life behind and immerse yourself in the latest in theatres. Seattle features a number of themed and modern theatres scattered around the downtown area.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>$12</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Nightlife</string>
+		<key>neighborhood</key>
+		<string>Capitol Hill</string>
+		<key>address</key>
+		<string></string>
+		<key>category</key>
+		<string>Food and Drinks</string>
+		<key>description</key>
+		<string>With its numerous bars, breweries, clubs, and music venues, there&apos;s no doubt Capitol Hill is the place to go if you&apos;re looking to explore Seattle nightlife. Notable bars include Unicorn, Elysian Brewery, and Optimism, although there are too many other great options to list them all here.</string>
+		<key>isIncludedCityPass</key>
+		<string>0</string>
+		<key>cost</key>
+		<string>$10</string>
+	</dict>
 </array>
 </plist>
