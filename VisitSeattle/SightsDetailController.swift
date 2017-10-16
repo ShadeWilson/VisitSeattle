@@ -33,7 +33,9 @@ class SightsDetailController: UITableViewController {
         
     
         configureView()
-        
+        // can change background color, but I haven't found a good balance
+        // so im sticking with the default
+        //self.tableView.backgroundColor = UIColor.lightGray
         
     }
 
@@ -104,15 +106,21 @@ class SightsDetailController: UITableViewController {
             delegate?.visitedSightNumber(sightIndex!, hasVisited: true)
             
         }
+        
+        // notify the master tableview that we've updated
+        // visitation status
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
     }
     
     
     func configureVistedButton() {
         if sight?.hasVisited == true {
             sightVisitButton.setTitle("Visited!", for: .normal)
+            // green
             sightVisitButton.backgroundColor = UIColor(displayP3Red: 0.0, green: 128/255.0, blue: 64/255.0, alpha: 1.0)
         } else {
             sightVisitButton.setTitle("To Do", for: .normal)
+            // blue
             sightVisitButton.backgroundColor = UIColor(displayP3Red: 0.0, green: 122/255.0, blue: 255/255.0, alpha: 1.0)
         }
     }

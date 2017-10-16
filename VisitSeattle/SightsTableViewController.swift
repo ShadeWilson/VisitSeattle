@@ -24,6 +24,12 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
+    }
+    
+    func loadList(){
+        //load data here
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,13 +52,24 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         //identifier specified on main.storyboard
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SightsCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SightsCell", for: indexPath) as? SightsCell else { fatalError() }
 
         let sight = sights[indexPath.row]
         
-        cell.textLabel?.text = sight.name
-        cell.imageView?.image = sight.image
-        cell.detailTextLabel?.text = sight.category
+        // if using a basic cell layout
+        //cell.textLabel?.text = sight.name
+        //cell.imageView?.image = sight.image
+        //cell.detailTextLabel?.text = sight.category
+        
+        cell.sightImageView.image = sight.image
+        cell.nameLabel.text = sight.name
+        
+        if sight.hasVisited {
+            cell.visitedLabel.alpha = 1.0
+        } else {
+            cell.visitedLabel.alpha = 0.0
+        }
+        
         
         return cell
     }
@@ -101,6 +118,7 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
             }
         }
     }
+    
     
 
 }

@@ -10,6 +10,11 @@ import UIKit
 
 class SightsCell: UITableViewCell {
 
+    
+    @IBOutlet weak var sightImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var visitedLabel: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
