@@ -9,12 +9,15 @@
 import UIKit
 
 protocol VisitedDelegate: class {
-    func visitedSightNumber(_ index: Int, hasVisited: Bool)
+    func visitedSightNumber(_ section: Int, row: Int, hasVisited: Bool)
 }
 
 class SightsTableViewController: UITableViewController, VisitedDelegate {
     
-    var sights = SightsSource.sights
+    //var sights = SightsSource.sights
+    
+    var sections = SightsSource.sectionedCategories
+    var categoryTitles = SightsSource.sortedUniqueCategories
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,7 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
+        
     }
     
     func loadList(){
@@ -40,20 +44,46 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
 
     // how many sections do we want per source of sights?
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1 // returns only 1 section
+        //return 1 // returns only 1 section
+        return sections.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sights.count
+        //return sights.count
+        return sections[section].count
+    }
+    
+    
+    // adds section titles
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return categoryTitles[section]
+    }
+    
+    // set title height
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40.0
+    }
+    
+    // set color, make text white and bold
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        
+        view.tintColor = UIColor(displayP3Red: 0.0, green: 128/255.0, blue: 64/255.0, alpha: 1.0)
+        
+        guard let header = view as? UITableViewHeaderFooterView else { return }
+        header.textLabel?.textColor = UIColor.white
+        header.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
     }
 
+
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         //identifier specified on main.storyboard
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SightsCell", for: indexPath) as? SightsCell else { fatalError() }
 
-        let sight = sights[indexPath.row]
+        //let sight = sights[indexPath.row]
+        let sight = sections[indexPath.section][indexPath.row]
         
         // if using a basic cell layout
         //cell.textLabel?.text = sight.name
@@ -76,11 +106,11 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
 
     // MARK: - Determining is a sight has been visited or not
     // function required by our delegate protocol
-    func visitedSightNumber(_ index: Int, hasVisited: Bool) {
+    func visitedSightNumber(_ section: Int, row: Int, hasVisited: Bool) {
         if hasVisited {
-            sights[index].hasVisited = true
+            sections[section][row].hasVisited = true
         } else {
-            sights[index].hasVisited = false
+            sections[section][row].hasVisited = false
         }
     }
 
@@ -106,13 +136,14 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
         // identifier must be showSight
         if segue.identifier == "showSight" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let sight = sights[indexPath.row]
+                let sight = sections[indexPath.section][indexPath.row]
                 
                 guard let navigationController = segue.destination as? UINavigationController, let sightsDetailController = navigationController.topViewController as? SightsDetailController else { return }
                 
                 
                 sightsDetailController.sight = sight
-                sightsDetailController.sightIndex = indexPath.row
+                sightsDetailController.sightSection = indexPath.section
+                sightsDetailController.sightRow = indexPath.row
                 sightsDetailController.delegate = self
                 
             }

@@ -11,7 +11,8 @@ import UIKit
 class SightsDetailController: UITableViewController {
 
     var sight: Sight?
-    var sightIndex: Int?
+    var sightSection: Int?
+    var sightRow: Int?
     
     weak var delegate: VisitedDelegate?
     
@@ -98,12 +99,12 @@ class SightsDetailController: UITableViewController {
             sight?.hasVisited = false
             sightVisitButton.setTitle("To Do", for: .normal)
             sightVisitButton.backgroundColor = UIColor(displayP3Red: 0.0, green: 122/255.0, blue: 255/255.0, alpha: 1.0)
-            delegate?.visitedSightNumber(sightIndex!, hasVisited: false)
+            delegate?.visitedSightNumber(sightSection!, row: sightRow!, hasVisited: false)
         } else {
             sight?.hasVisited = true
             sightVisitButton.setTitle("Visited!", for: .normal)
             sightVisitButton.backgroundColor = UIColor(displayP3Red: 0.0, green: 128/255.0, blue: 64/255.0, alpha: 1.0)
-            delegate?.visitedSightNumber(sightIndex!, hasVisited: true)
+            delegate?.visitedSightNumber(sightSection!, row: sightRow!, hasVisited: true)
             
         }
         

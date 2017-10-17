@@ -43,5 +43,19 @@ class SightsSource {
         return data.flatMap { Sight(dictionary: $0) }
     }
     
+    // allows for sorting based on category
+    static var sortedUniqueCategories: [String] {
+        let categories = sights.map { $0.category }
+        let uniqueCategories = Set(categories) // unordered, but unique list
+        return Array(uniqueCategories).sorted()
+    }
+    
+    static var sectionedCategories: [[Sight]] {
+        return sortedUniqueCategories.map { category in
+            let filteredCategories = sights.filter { $0.category == category }
+            return filteredCategories.sorted(by: { $0.category < $1.category })
+        }
+    }
+    
 }
 

@@ -45,7 +45,7 @@
 305 Harrison St
 </string>
 		<key>category</key>
-		<string>Museum </string>
+		<string>Museum</string>
 		<key>description</key>
 		<string>Chihuly Garden and Glass is an exhibit in the Seattle Center showcasing the studio glass of Dale Chihuly. The project includes three primary components: the Garden, the Glasshouse, and the Interior Exhibits, with significant secondary spaces</string>
 		<key>isIncludedCityPass</key>
@@ -61,7 +61,7 @@
 		<key>address</key>
 		<string>614 1st Avenue</string>
 		<key>category</key>
-		<string>History?</string>
+		<string>History</string>
 		<key>description</key>
 		<string>One of Seattle’s most unusual attractions, a humorous stroll through intriguing subterranean storefronts and sidewalks entombed when the city rebuilt on top of itself after the Great Fire of 1889.
 The 75-minute guided walking tour begins beneath Doc Maynard’s Public House, then spills into historic Pioneer Square, Seattle’s birthplace, before plunging underground for an exclusive, time-capsule view of the buried city.</string>
@@ -449,7 +449,7 @@ Fremont’s neighborhood trolls have come a long way from the terrifying Trolls 
 		<key>address</key>
 		<string>1501 7th Ave</string>
 		<key>category</key>
-		<string>Museum</string>
+		<string>Entertainment</string>
 		<key>description</key>
 		<string>Leave the troubles of you real life behind and immerse yourself in the latest in theatres. Seattle features a number of themed and modern theatres scattered around the downtown area.</string>
 		<key>isIncludedCityPass</key>
@@ -465,7 +465,7 @@ Fremont’s neighborhood trolls have come a long way from the terrifying Trolls 
 		<key>address</key>
 		<string></string>
 		<key>category</key>
-		<string>Food and Drinks</string>
+		<string>Food and Drink</string>
 		<key>description</key>
 		<string>With its numerous bars, breweries, clubs, and music venues, there&apos;s no doubt Capitol Hill is the place to go if you&apos;re looking to explore Seattle nightlife. Notable bars include Unicorn, Elysian Brewery, and Optimism, although there are too many other great options to list them all here.</string>
 		<key>isIncludedCityPass</key>
