@@ -8,4 +8,4 @@ sure you leave no stone unturned.
 
 This app was helped along by the iOS courses on [Treehouse](https://teamtreehouse.com/).
 
-A work in progress.
+*A work in progress.*
