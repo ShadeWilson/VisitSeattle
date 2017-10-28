@@ -97,7 +97,7 @@ class SightsDetailController: UITableViewController {
         
         if sight?.hasVisited == true {
             sight?.hasVisited = false
-            sightVisitButton.setTitle("Not Vistied", for: .normal)
+            sightVisitButton.setTitle("Not Visited", for: .normal)
             sightVisitButton.backgroundColor = UIColor(displayP3Red: 0.0, green: 122/255.0, blue: 255/255.0, alpha: 1.0)
             delegate?.visitedSightNumber(sightSection!, row: sightRow!, hasVisited: false)
         } else {
@@ -120,7 +120,7 @@ class SightsDetailController: UITableViewController {
             // green
             sightVisitButton.backgroundColor = UIColor(displayP3Red: 0.0, green: 128/255.0, blue: 64/255.0, alpha: 1.0)
         } else {
-            sightVisitButton.setTitle("To Do", for: .normal)
+            sightVisitButton.setTitle("Not Visited", for: .normal)
             // blue
             sightVisitButton.backgroundColor = UIColor(displayP3Red: 0.0, green: 122/255.0, blue: 255/255.0, alpha: 1.0)
         }

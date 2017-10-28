@@ -27,13 +27,13 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
+        //NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
         
     }
-    
-    func loadList(){
-        self.tableView.reloadData()
-    }
+    // use with NotificationCenter
+    //func loadList(){
+    //    self.tableView.reloadData()
+    //}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -112,6 +112,8 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
         } else {
             sections[section][row].hasVisited = false
         }
+        // reload master tableview so refreshed check/uncheck
+        tableView.reloadData()
     }
 
     
