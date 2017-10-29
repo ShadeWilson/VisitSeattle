@@ -83,7 +83,7 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SightsCell", for: indexPath) as? SightsCell else { fatalError() }
 
         //let sight = sights[indexPath.row]
-        let sight = sections[indexPath.section][indexPath.row]
+        var sight = sections[indexPath.section][indexPath.row]
         
         // if using a basic cell layout
         //cell.textLabel?.text = sight.name
@@ -92,6 +92,11 @@ class SightsTableViewController: UITableViewController, VisitedDelegate {
         
         cell.sightImageView.image = sight.image
         cell.nameLabel.text = sight.name
+        
+        let userDefaults = UserDefaults.standard
+        if let hasVisitedSavedProperty = userDefaults.object(forKey: sight.name) as? Bool {
+            sight.hasVisited = hasVisitedSavedProperty
+        }
         
         if sight.hasVisited {
             cell.visitedLabel.alpha = 1.0

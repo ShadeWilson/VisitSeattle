@@ -111,11 +111,20 @@ class SightsDetailController: UITableViewController {
         // notify the master tableview that we've updated
         // visitation status
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+        
+        UserDefaults.standard.set(sight?.hasVisited, forKey: (sight?.name)!)
     }
     
     
     func configureVistedButton() {
-        if sight?.hasVisited == true {
+        guard var sight = sight else { return }
+        
+        let userDefaults = UserDefaults.standard
+        if let hasVisitedSavedProperty = userDefaults.object(forKey: sight.name) as? Bool {
+            sight.hasVisited = hasVisitedSavedProperty
+        }
+        
+        if sight.hasVisited == true {
             sightVisitButton.setTitle("Visited!", for: .normal)
             // green
             sightVisitButton.backgroundColor = UIColor(displayP3Red: 0.0, green: 128/255.0, blue: 64/255.0, alpha: 1.0)
