@@ -10,6 +10,6 @@ sure you leave no stone unturned.
 
 A work in progress.
 
-*This app was helped along by the iOS courses on [Treehouse](https://teamtreehouse.com/).*
+*This app was helped along by the iOS courses on [Treehouse](https://teamtreehouse.com/). I take no credit for the images used in this app. All credits are given in the PictureCredits file.*
 
 
