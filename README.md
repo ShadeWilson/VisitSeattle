@@ -6,6 +6,10 @@ and more, Visit Seattle aims to give you insight into the best spots to check ou
 your feet and where you want to go. As you go around visiting sights, you can also check them off in the app to be 
 sure you leave no stone unturned.
 
-This app was helped along by the iOS courses on [Treehouse](https://teamtreehouse.com/).
 
-*A work in progress.*
+
+A work in progress.
+
+*This app was helped along by the iOS courses on [Treehouse](https://teamtreehouse.com/).*
+
+
