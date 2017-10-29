@@ -6,7 +6,7 @@ and more, Visit Seattle aims to give you insight into the best spots to check ou
 your feet and where you want to go. As you go around visiting sights, you can also check them off in the app to be 
 sure you leave no stone unturned.
 
-![Master View Image](https://github.com/ShadeWilson/VisitSeattle/blob/master/appImages/masterTableView.jpg)
+<img src="https://github.com/ShadeWilson/VisitSeattle/blob/master/appImages/masterTableView.jpg" width="250"> <img src="https://github.com/ShadeWilson/VisitSeattle/blob/master/appImages/spaceNeedle.jpg" width="250"> <img src="https://github.com/ShadeWilson/VisitSeattle/blob/master/appImages/woodenBoatsVisited.jpg" width="250">
 
 A work in progress.
 
