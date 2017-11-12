@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="-916" y="-331"/>
         </scene>
-        <!--View Controller-->
+        <!--Weather View Controller-->
         <scene sceneID="XOx-q1-P3i">
             <objects>
-                <viewController id="TIc-3Y-nZQ" sceneMemberID="viewController">
+                <viewController id="TIc-3Y-nZQ" customClass="WeatherViewController" customModule="VisitSeattle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AmC-k9-978"/>
                         <viewControllerLayoutGuide type="bottom" id="2sW-Jm-93H"/>
@@ -52,7 +52,18 @@
                     <view key="view" contentMode="scaleToFill" id="QTJ-dA-Xzc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7J-dE-qla">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="TIc-3Y-nZQ" eventType="touchUpInside" id="uW6-P3-3sO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDV-fh-oLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -124,12 +135,12 @@
                     <navigationItem key="navigationItem" title="Visit Seattle!" id="Zdf-7t-Un8">
                         <barButtonItem key="leftBarButtonItem" title="Weather" id="sVb-aA-zgi">
                             <connections>
-                                <segue destination="TIc-3Y-nZQ" kind="show" id="Kae-2m-fqK"/>
+                                <segue destination="TIc-3Y-nZQ" kind="presentation" identifier="showWeather" modalTransitionStyle="crossDissolve" id="Kae-2m-fqK"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Details" id="Zt1-y0-xam">
                             <connections>
-                                <segue destination="yJG-TS-DHK" kind="show" id="RbG-zE-d5H"/>
+                                <segue destination="yJG-TS-DHK" kind="presentation" identifier="showDetails" id="RbG-zE-d5H"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

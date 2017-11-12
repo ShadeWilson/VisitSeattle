@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A224A6911FB8E5D700603DE6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224A6901FB8E5D700603DE6 /* WeatherViewController.swift */; };
 		A22D8ACF1F930918007E8F0C /* PictureCredits in Resources */ = {isa = PBXBuildFile; fileRef = A22D8ACE1F930918007E8F0C /* PictureCredits */; };
 		A248131D1F928D2B00AAA8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248131C1F928D2B00AAA8BA /* AppDelegate.swift */; };
 		A24813241F928D2B00AAA8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24813221F928D2B00AAA8BA /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A224A6901FB8E5D700603DE6 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		A22D8ACE1F930918007E8F0C /* PictureCredits */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PictureCredits; sourceTree = "<group>"; };
 		A24813191F928D2B00AAA8BA /* VisitSeattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisitSeattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A248131C1F928D2B00AAA8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A224A68F1FB8E30300603DE6 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				A224A6901FB8E5D700603DE6 /* WeatherViewController.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 		A24813101F928D2B00AAA8BA = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		A248131B1F928D2B00AAA8BA /* VisitSeattle */ = {
 			isa = PBXGroup;
 			children = (
+				A224A68F1FB8E30300603DE6 /* Weather */,
 				A248131C1F928D2B00AAA8BA /* AppDelegate.swift */,
 				A24813221F928D2B00AAA8BA /* Main.storyboard */,
 				A24813251F928D2B00AAA8BA /* Assets.xcassets */,
@@ -161,6 +172,7 @@
 				A24813391F929C1F00AAA8BA /* SightsCell.swift in Sources */,
 				A24813351F9291B200AAA8BA /* Sights.swift in Sources */,
 				A248131D1F928D2B00AAA8BA /* AppDelegate.swift in Sources */,
+				A224A6911FB8E5D700603DE6 /* WeatherViewController.swift in Sources */,
 				A24813331F928FD500AAA8BA /* PListLoader.swift in Sources */,
 				A24813371F929B0A00AAA8BA /* SightsTableViewController.swift in Sources */,
 			);
