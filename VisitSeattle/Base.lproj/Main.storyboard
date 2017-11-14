@@ -59,10 +59,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Yzk-nC-UhG">
-                                <rect key="frame" x="19" y="24" width="337" height="0.0"/>
+                                <rect key="frame" x="19.5" y="24" width="337" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7J-dE-qla">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Back"/>
                                         <connections>
@@ -70,20 +70,20 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather in Seattle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnF-mA-ckB">
-                                        <rect key="frame" x="88" y="0.0" width="159" height="0.0"/>
+                                        <rect key="frame" x="88" y="0.0" width="159" height="34"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58f-7L-JsR">
-                                        <rect key="frame" x="295" y="0.0" width="42" height="0.0"/>
+                                        <rect key="frame" x="295" y="0.0" width="42" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="More"/>
                                     </button>
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="XIK-pc-xSV">
-                                <rect key="frame" x="158" y="71" width="60" height="60"/>
+                                <rect key="frame" x="158" y="99" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XIK-pc-xSV" secondAttribute="height" multiplier="1:1" id="99X-LR-goO"/>
                                 </constraints>
@@ -115,7 +115,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's looking a little rainy today. Bring a raincoat!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcW-46-E3L">
-                                <rect key="frame" x="13" y="584" width="350" height="43"/>
+                                <rect key="frame" x="13" y="564" width="350" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="7bC-ln-vvT"/>
                                 </constraints>
@@ -239,23 +239,31 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DarkSkyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Xye-1x-Lcf">
+                                <rect key="frame" x="-764.5" y="619" width="1904" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ans-Zr-rub"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zcW-46-E3L" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="4yh-F7-bn5"/>
+                            <constraint firstItem="2sW-Jm-93H" firstAttribute="top" secondItem="Xye-1x-Lcf" secondAttribute="bottom" id="7FY-hw-2Fp"/>
                             <constraint firstItem="qUN-VG-Qii" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="89r-6I-D48"/>
-                            <constraint firstItem="XIK-pc-xSV" firstAttribute="top" secondItem="fnF-mA-ckB" secondAttribute="bottom" constant="47" id="953-XG-PAZ"/>
                             <constraint firstItem="Yzk-nC-UhG" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="9CQ-Zw-tJq"/>
+                            <constraint firstItem="gYQ-vk-FhX" firstAttribute="top" secondItem="XIK-pc-xSV" secondAttribute="bottom" constant="19" id="AvV-dP-T8b"/>
                             <constraint firstItem="lTV-OR-e0D" firstAttribute="leading" secondItem="gYQ-vk-FhX" secondAttribute="trailing" constant="8" id="E8T-Ln-lQs"/>
                             <constraint firstItem="qUN-VG-Qii" firstAttribute="top" secondItem="TQq-cD-mh4" secondAttribute="bottom" constant="14.5" id="IgW-WW-5OD"/>
                             <constraint firstItem="XIK-pc-xSV" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="Jcb-6K-gDi"/>
                             <constraint firstItem="kVN-Kd-wkw" firstAttribute="top" secondItem="gYQ-vk-FhX" secondAttribute="bottom" constant="80" id="KgY-LO-xPi"/>
                             <constraint firstItem="lTV-OR-e0D" firstAttribute="centerY" secondItem="gYQ-vk-FhX" secondAttribute="centerY" id="LIB-40-zBI"/>
-                            <constraint firstItem="2sW-Jm-93H" firstAttribute="top" secondItem="zcW-46-E3L" secondAttribute="bottom" constant="40" id="M31-Ie-onF"/>
+                            <constraint firstItem="2sW-Jm-93H" firstAttribute="top" secondItem="zcW-46-E3L" secondAttribute="bottom" constant="60" id="M31-Ie-onF"/>
                             <constraint firstItem="kVN-Kd-wkw" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="M3B-Yv-cpu"/>
-                            <constraint firstItem="gYQ-vk-FhX" firstAttribute="top" secondItem="XIK-pc-xSV" secondAttribute="bottom" constant="47" id="Tty-wC-CN9"/>
                             <constraint firstItem="Yzk-nC-UhG" firstAttribute="top" secondItem="AmC-k9-978" secondAttribute="bottom" constant="4" id="U0C-KL-twA"/>
+                            <constraint firstItem="Xye-1x-Lcf" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="Vez-yG-8aC"/>
+                            <constraint firstItem="XIK-pc-xSV" firstAttribute="top" secondItem="fnF-mA-ckB" secondAttribute="bottom" constant="41" id="Xfy-ey-PFg"/>
                             <constraint firstItem="xF5-y7-uWS" firstAttribute="centerY" secondItem="qUN-VG-Qii" secondAttribute="centerY" id="dnZ-Rd-dFQ"/>
                             <constraint firstItem="gYQ-vk-FhX" firstAttribute="top" secondItem="QTJ-dA-Xzc" secondAttribute="top" constant="178" id="myn-Bm-bl9"/>
                             <constraint firstItem="8B0-09-3O6" firstAttribute="centerY" secondItem="0x7-cm-ndz" secondAttribute="centerY" id="paj-2l-H3B"/>
@@ -631,6 +639,7 @@
     </scenes>
     <resources>
         <image name="Check Mark" width="256" height="256"/>
+        <image name="DarkSkyLogo" width="1904" height="759"/>
         <image name="rain" width="60" height="60"/>
         <image name="sunny" width="810" height="806"/>
         <image name="wind" width="60" height="38"/>
