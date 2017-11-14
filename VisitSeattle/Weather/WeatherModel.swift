@@ -8,6 +8,16 @@
 
 import Foundation
 
+struct Key {
+    static let temperature = "temperature"
+    static let temperatureHigh = "temperatureHigh"
+    static let temperatureLow = "temperatureLow"
+    static let humidity = "humidity"
+    static let precipitationProbability = "precipProbability"
+    static let icon = "icon"
+    static let cloudCover = "cloudCover"
+}
+
 struct WeatherModel {
     let temperature: Double
     let temperatureHigh: Double
@@ -19,16 +29,6 @@ struct WeatherModel {
 }
 
 extension WeatherModel {
-    
-    struct Key {
-        static let temperature = "temperature"
-        static let temperatureHigh = "temperatureHigh"
-        static let temperatureLow = "temperatureLow"
-        static let humidity = "humidity"
-        static let precipitationProbability = "precipProbability"
-        static let icon = "icon"
-        static let cloudCover = "cloudCover"
-    }
     
     // this will fail if any of the values are nil I think
     init?(json: [String: Any]) {

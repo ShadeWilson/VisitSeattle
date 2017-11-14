@@ -10,16 +10,6 @@ import Foundation
 
 struct WeatherStub {
     
-    struct Key {
-        static let temperature = "temperature"
-        static let temperatureHigh = "temperatureHigh"
-        static let temperatureLow = "temperatureLow"
-        static let humidity = "humidity"
-        static let precipitationProbability = "precipProbability"
-        static let icon = "icon"
-        static let cloudCover = "cloudCover"
-    }
-    
     static let jsonStub: [String: Any] = [
         Key.temperature: 55.4,
         Key.temperatureHigh: 69.0,
