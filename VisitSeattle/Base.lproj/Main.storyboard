@@ -59,10 +59,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Yzk-nC-UhG">
-                                <rect key="frame" x="19" y="24" width="337" height="34"/>
+                                <rect key="frame" x="19" y="24" width="337" height="0.0"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7J-dE-qla">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Back"/>
                                         <connections>
@@ -70,58 +70,43 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather in Seattle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnF-mA-ckB">
-                                        <rect key="frame" x="88" y="0.0" width="159" height="34"/>
+                                        <rect key="frame" x="88" y="0.0" width="159" height="0.0"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58f-7L-JsR">
-                                        <rect key="frame" x="295" y="0.0" width="42" height="34"/>
+                                        <rect key="frame" x="295" y="0.0" width="42" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="More"/>
                                     </button>
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="XIK-pc-xSV">
-                                <rect key="frame" x="157.5" y="105" width="60" height="60"/>
+                                <rect key="frame" x="158" y="71" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XIK-pc-xSV" secondAttribute="height" multiplier="1:1" id="99X-LR-goO"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="54˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYQ-vk-FhX">
-                                <rect key="frame" x="111.5" y="212" width="152.5" height="116"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="100"/>
+                                <rect key="frame" x="89" y="178" width="198" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="RU8-b6-fy5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="130"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="lTV-OR-e0D">
-                                <rect key="frame" x="272" y="241" width="29.5" height="58"/>
+                                <rect key="frame" x="295" y="225" width="26" height="58"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSW-dN-uGh">
-                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="20"/>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxl-T2-5vL">
-                                        <rect key="frame" x="0.0" y="38" width="29.5" height="20"/>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="0rj-Po-csB">
-                                <rect key="frame" x="61" y="471" width="26" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="63˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yt-Wm-TkG">
                                         <rect key="frame" x="0.0" y="0.0" width="26" height="20"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="45˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohr-BI-6Ir">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxl-T2-5vL">
                                         <rect key="frame" x="0.0" y="38" width="26" height="20"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -130,7 +115,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's looking a little rainy today. Bring a raincoat!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcW-46-E3L">
-                                <rect key="frame" x="12.5" y="584" width="350" height="43"/>
+                                <rect key="frame" x="13" y="584" width="350" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="7bC-ln-vvT"/>
                                 </constraints>
@@ -138,95 +123,145 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="nY1-3h-rNu">
-                                <rect key="frame" x="31.5" y="439" width="312" height="20.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8B0-09-3O6">
+                                <rect key="frame" x="24" y="445" width="76" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brF-eH-EG2">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunny" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-ss-hye">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="aNc-HY-2Jc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="0rj-Po-csB">
+                                        <rect key="frame" x="50" y="0.0" width="26" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="63˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yt-Wm-TkG">
+                                                <rect key="frame" x="0.0" y="0.0" width="26" height="22"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="45˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohr-BI-6Ir">
+                                                <rect key="frame" x="0.0" y="40" width="26" height="20"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="T93-h5-UT7"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xF5-y7-uWS">
+                                <rect key="frame" x="271.5" y="445" width="76" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="laW-7Y-11W">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="Yr5-Ah-Xbm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="C5v-aE-MhH">
+                                        <rect key="frame" x="50" y="0.0" width="26" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="44˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9d-UH-JIX">
+                                                <rect key="frame" x="0.0" y="0.0" width="26" height="22"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="27˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDc-Fn-V0h">
+                                                <rect key="frame" x="0.0" y="40" width="26" height="20"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="k20-ug-XrY"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qUN-VG-Qii">
+                                <rect key="frame" x="149.5" y="445" width="76" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" translatesAutoresizingMaskIntoConstraints="NO" id="0x7-cm-ndz">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="YyR-Ea-CwU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="HNV-eA-RYu">
+                                        <rect key="frame" x="50" y="0.0" width="26" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="51˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emc-Fh-Zeu">
+                                                <rect key="frame" x="0.0" y="0.0" width="26" height="22"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="30˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uL0-vN-SuA">
+                                                <rect key="frame" x="0.0" y="40" width="26" height="20"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ASQ-mB-Pm9"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="kVN-Kd-wkw">
+                                <rect key="frame" x="37" y="409" width="302.5" height="21.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzx-dR-bzY">
+                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdL-Rj-fex">
-                                        <rect key="frame" x="115" y="0.0" width="72" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQq-cD-mh4">
+                                        <rect key="frame" x="109.5" y="0.0" width="72.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bys-vJ-URj">
-                                        <rect key="frame" x="252" y="0.0" width="60" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzH-Sa-Wnq">
+                                        <rect key="frame" x="242" y="0.0" width="60.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sunny" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-ss-hye">
-                                <rect key="frame" x="19" y="478" width="34" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="C5v-aE-MhH">
-                                <rect key="frame" x="317" y="471" width="26" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="44˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9d-UH-JIX">
-                                        <rect key="frame" x="0.0" y="0.0" width="26" height="20"/>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="27˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDc-Fn-V0h">
-                                        <rect key="frame" x="0.0" y="38" width="26" height="20"/>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="laW-7Y-11W">
-                                <rect key="frame" x="275" y="478" width="34" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="HNV-eA-RYu">
-                                <rect key="frame" x="191" y="471" width="26" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="51˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emc-Fh-Zeu">
-                                        <rect key="frame" x="0.0" y="0.0" width="26" height="20"/>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="30˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uL0-vN-SuA">
-                                        <rect key="frame" x="0.0" y="38" width="26" height="20"/>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wind" translatesAutoresizingMaskIntoConstraints="NO" id="0x7-cm-ndz">
-                                <rect key="frame" x="149" y="478" width="34" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nY1-3h-rNu" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="3MJ-U5-pOj"/>
                             <constraint firstItem="zcW-46-E3L" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="4yh-F7-bn5"/>
+                            <constraint firstItem="qUN-VG-Qii" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="89r-6I-D48"/>
                             <constraint firstItem="XIK-pc-xSV" firstAttribute="top" secondItem="fnF-mA-ckB" secondAttribute="bottom" constant="47" id="953-XG-PAZ"/>
                             <constraint firstItem="Yzk-nC-UhG" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="9CQ-Zw-tJq"/>
-                            <constraint firstItem="zcW-46-E3L" firstAttribute="top" secondItem="nY1-3h-rNu" secondAttribute="bottom" constant="124.5" id="B6n-Tx-3jS"/>
                             <constraint firstItem="lTV-OR-e0D" firstAttribute="leading" secondItem="gYQ-vk-FhX" secondAttribute="trailing" constant="8" id="E8T-Ln-lQs"/>
+                            <constraint firstItem="qUN-VG-Qii" firstAttribute="top" secondItem="TQq-cD-mh4" secondAttribute="bottom" constant="14.5" id="IgW-WW-5OD"/>
                             <constraint firstItem="XIK-pc-xSV" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="Jcb-6K-gDi"/>
+                            <constraint firstItem="kVN-Kd-wkw" firstAttribute="top" secondItem="gYQ-vk-FhX" secondAttribute="bottom" constant="80" id="KgY-LO-xPi"/>
                             <constraint firstItem="lTV-OR-e0D" firstAttribute="centerY" secondItem="gYQ-vk-FhX" secondAttribute="centerY" id="LIB-40-zBI"/>
                             <constraint firstItem="2sW-Jm-93H" firstAttribute="top" secondItem="zcW-46-E3L" secondAttribute="bottom" constant="40" id="M31-Ie-onF"/>
+                            <constraint firstItem="kVN-Kd-wkw" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="M3B-Yv-cpu"/>
                             <constraint firstItem="gYQ-vk-FhX" firstAttribute="top" secondItem="XIK-pc-xSV" secondAttribute="bottom" constant="47" id="Tty-wC-CN9"/>
                             <constraint firstItem="Yzk-nC-UhG" firstAttribute="top" secondItem="AmC-k9-978" secondAttribute="bottom" constant="4" id="U0C-KL-twA"/>
-                            <constraint firstAttribute="trailing" secondItem="lTV-OR-e0D" secondAttribute="trailing" constant="73.5" id="eSa-vh-OwL"/>
-                            <constraint firstItem="fdL-Rj-fex" firstAttribute="top" secondItem="gYQ-vk-FhX" secondAttribute="bottom" constant="111" id="pMo-Gy-2HF"/>
+                            <constraint firstItem="xF5-y7-uWS" firstAttribute="centerY" secondItem="qUN-VG-Qii" secondAttribute="centerY" id="dnZ-Rd-dFQ"/>
+                            <constraint firstItem="gYQ-vk-FhX" firstAttribute="top" secondItem="QTJ-dA-Xzc" secondAttribute="top" constant="178" id="myn-Bm-bl9"/>
+                            <constraint firstItem="8B0-09-3O6" firstAttribute="centerY" secondItem="0x7-cm-ndz" secondAttribute="centerY" id="paj-2l-H3B"/>
                             <constraint firstItem="gYQ-vk-FhX" firstAttribute="centerX" secondItem="QTJ-dA-Xzc" secondAttribute="centerX" id="q7x-jP-pzi"/>
+                            <constraint firstItem="xF5-y7-uWS" firstAttribute="centerX" secondItem="SzH-Sa-Wnq" secondAttribute="centerX" id="xWR-7v-8OH"/>
+                            <constraint firstItem="8B0-09-3O6" firstAttribute="centerX" secondItem="Wzx-dR-bzY" secondAttribute="centerX" id="zOc-4V-9LM"/>
                         </constraints>
                     </view>
                 </viewController>
