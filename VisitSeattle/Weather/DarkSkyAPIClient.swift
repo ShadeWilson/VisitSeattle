@@ -40,7 +40,7 @@ class DarkSkyAPIClient {
                     return
                 }
                 
-                guard let currentWeatherJson = json["currently"] as? [String: AnyObject], let currentWeather = WeatherModel(json: currentWeatherJson) else {
+                guard let currentWeatherJson = json["currently"] as? [String: Any], let currentWeather = WeatherModel(json: currentWeatherJson) else {
                     completion(nil, .jsonParsingFailure)
                     return
                 }

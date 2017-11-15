@@ -19,6 +19,7 @@ struct Key {
     static let summary = "summary"
 }
 
+// TODO: may need to be revamped
 struct WeatherModel {
     let temperature: Double
     let temperatureHigh: Double
