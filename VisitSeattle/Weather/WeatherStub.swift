@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Load in fake data for testing purposes
 struct WeatherStub {
     
     static let jsonStub: [String: Any] = [
@@ -17,7 +18,8 @@ struct WeatherStub {
         Key.humidity: 0.1,
         Key.precipitationProbability: 0.99,
         Key.icon: "rain",
-        Key.cloudCover: 0.90
+        Key.cloudCover: 0.90,
+        Key.summary: "It gon' rain."
     ]
     
     static var data: WeatherModel {

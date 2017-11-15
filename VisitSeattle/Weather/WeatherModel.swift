@@ -16,6 +16,7 @@ struct Key {
     static let precipitationProbability = "precipProbability"
     static let icon = "icon"
     static let cloudCover = "cloudCover"
+    static let summary = "summary"
 }
 
 struct WeatherModel {
@@ -26,6 +27,7 @@ struct WeatherModel {
     let precipitationProbability: Double
     let icon: String
     let cloudCover: Double
+    let summary: String
 }
 
 extension WeatherModel {
@@ -38,7 +40,8 @@ extension WeatherModel {
             let humidityValue = json[Key.humidity] as? Double,
             let precipitationProbabilityValue = json[Key.precipitationProbability] as? Double,
             let iconString = json[Key.icon] as? String,
-            let cloudCoverValue = json[Key.cloudCover] as? Double else { return nil }
+            let cloudCoverValue = json[Key.cloudCover] as? Double,
+            let summaryString = json[Key.summary] as? String  else { return nil }
         
         self.temperature = tempValue
         self.temperatureHigh = tempHigh
@@ -47,6 +50,7 @@ extension WeatherModel {
         self.precipitationProbability = precipitationProbabilityValue
         self.icon = iconString
         self.cloudCover = cloudCoverValue
+        self.summary = summaryString
     }
 }
 
