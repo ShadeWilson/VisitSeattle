@@ -40,12 +40,23 @@ class DarkSkyAPIClient {
                     return
                 }
                 
-                guard let currentWeatherJson = json["currently"] as? [String: Any], let currentWeather = WeatherModel(json: currentWeatherJson) else {
+                //guard let currentWeatherJson = json["currently"] as? [String: Any], let currentWeather = WeatherModel(json: currentWeatherJson) else {
+                //    completion(nil, .jsonParsingFailure)
+                //    return
+                //}
+                
+                if let currentWeatherJson = json["currently"] as? [String: Any],
+                    let hourlyWeatherJson = json["hourly"] as? [String: Any],
+                    let dailyWeatherJson = json["daily"] as? [String: Any] {
+                    let weatherModel = WeatherModel(currentJson: currentWeatherJson, hourlyJson: hourlyWeatherJson, dailyJson: dailyWeatherJson)
+                    
+                    completion(weatherModel, nil)
+                } else {
                     completion(nil, .jsonParsingFailure)
                     return
                 }
                 
-                completion(currentWeather, nil)
+                
             }
             
         }

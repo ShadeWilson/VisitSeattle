@@ -14,7 +14,7 @@ struct Coordinates {
     
     // default is seattle for now, so makes sense to hard code this in
     static let seattleLatitude = 47.6062
-    static let seattleLongitude = 122.3321
+    static let seattleLongitude = -122.3321
 }
 
 extension Coordinates: CustomStringConvertible {
